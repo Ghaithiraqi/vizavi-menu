@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vizavi Cafe & Restaurant | QR Menü</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="splash-screen" id="splashScreen" aria-hidden="true">
+      <div class="splash-logo">
+        <span>V</span>
+      </div>
+      <p>Hoş Geldiniz</p>
+    </div>
+
+    <header class="hero" id="top">
+      <div class="hero-ornament hero-ornament-left" aria-hidden="true"></div>
+      <div class="hero-ornament hero-ornament-right" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-logo-wrap">
+          <div class="hero-logo">
+            <!-- Logoyu değiştirmek için ./images/logo.png dosyasını kendi Vizavi logonuzla değiştirin. -->
+            <img src="./images/logo.png" alt="Vizavi Cafe & Restaurant logosu" id="brandLogo">
+            <span aria-hidden="true">V</span>
+          </div>
+        </div>
+
+        <p class="hero-kicker">Kafe & Restoran</p>
+        <h1>Vizavi Cafe & Restaurant</h1>
+        <button class="hero-button" type="button" id="exploreMenu">Menüyü Keşfet</button>
+      </div>
+    </header>
+
+    <nav class="category-shell" id="categoryShell" aria-label="Menü kategorileri">
+      <div class="category-bar" id="categoryBar"></div>
+    </nav>
+
+    <main class="menu-page" id="menuContent">
+      <div class="menu-intro" aria-hidden="true">
+        <span></span>
+        <strong>Menü</strong>
+        <span></span>
+      </div>
+      <div class="menu-sections" id="menuSections"></div>
+    </main>
+
+    <div class="modal" id="dishModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="dish-sheet" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-button" type="button" aria-label="Kapat" data-close-modal>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-image-wrap">
+          <img id="modalImage" alt="">
+          <div class="image-fallback" id="modalFallback" aria-hidden="true"></div>
+        </div>
+
+        <div class="modal-content">
+          <p class="modal-label">Lezzet Detayı</p>
+          <h2 id="modalTitle"></h2>
+          <p class="modal-description" id="modalShortDescription"></p>
+
+          <div class="detail-block">
+            <h3>İçindekiler</h3>
+            <ul id="modalIngredients"></ul>
+          </div>
+
+          <div class="detail-block">
+            <h3>Alerjen Bilgisi</h3>
+            <ul id="modalAllergens"></ul>
+          </div>
+
+          <div class="price-block">
+            <span>Fiyat</span>
+            <strong id="modalPrice"></strong>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
