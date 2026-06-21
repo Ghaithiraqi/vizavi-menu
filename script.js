@@ -225,6 +225,16 @@ const menuData = [
     tags: ["🌱 Vejetaryen"],
   },
   {
+    name: "Diyet Izgara Falafel Dürüm",
+    category: "Falafel Menü",
+    price: "—",
+    image: "./images/diyet-izgara-falafel.jpg",
+    shortDescription: "Kızartmadan, ızgarada hazırlanan hafif falafel; taze sebzeler, turşu ve tahin sosuyla ince ekmeğe sarılır.",
+    ingredients: ["Izgara falafel", "Taze sebzeler", "Turşu", "Mor lahana", "Tahin sos", "İnce ekmek"],
+    allergens: ["Gluten içerir", "Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["Diyet"],
+  },
+  {
     name: "Bademli Hummus Fatte",
     category: "Hummus Menü",
     price: "₺472,22",
