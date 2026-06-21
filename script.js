@@ -244,6 +244,10 @@ const menuData = [
     name: "Büyük Peynirli Pide (Manakış)",
     category: "Taş Fırında Menü",
     price: "₺340,00",
+    sizes: [
+      { label: "Orta", price: "—" },
+      { label: "Büyük", price: "₺340,00" },
+    ],
     image: "./images/buyuk-peynirli-pide-manakis.jpg",
     shortDescription: "Taş fırında pişen ince hamurun üzerinde eriyen peynirle sıcak ve sade bir lezzet.",
     ingredients: ["İncecik hamur", "Erimiş peynir"],
@@ -254,6 +258,10 @@ const menuData = [
     name: "Peynirli Muhammara Pide (Manakış)",
     category: "Taş Fırında Menü",
     price: "₺378,89",
+    sizes: [
+      { label: "Orta", price: "—" },
+      { label: "Büyük", price: "₺378,89" },
+    ],
     image: "./images/peynirli-muhammara-pide-manakis.jpg",
     shortDescription: "Muhammaranın baharatlı aroması, erimiş peynirle taş fırında birleşir.",
     ingredients: ["İncecik hamur", "Muhammara", "Erimiş peynir"],
@@ -264,6 +272,10 @@ const menuData = [
     name: "Zahterli Peynirli Pide (Manakış)",
     category: "Taş Fırında Menü",
     price: "—",
+    sizes: [
+      { label: "Orta", price: "—" },
+      { label: "Büyük", price: "—" },
+    ],
     image: "./images/zahterli-peynirli-pide.jpg",
     shortDescription: "Aromatik zahter karışımı ve erimiş peynirle taş fırında pişen, sıcak ve doyurucu manakış.",
     ingredients: ["İncecik hamur", "Özel zahter karışımı", "Erimiş peynir"],
@@ -274,6 +286,10 @@ const menuData = [
     name: "Zahterli Pide (Manakış)",
     category: "Taş Fırında Menü",
     price: "—",
+    sizes: [
+      { label: "Orta", price: "—" },
+      { label: "Büyük", price: "—" },
+    ],
     image: "./images/zahterli-pide.jpg",
     shortDescription: "Özel zahter karışımıyla hazırlanan ince hamurlu, kokusu güçlü klasik taş fırın manakışı.",
     ingredients: ["İncecik hamur", "Özel zahter karışımı"],
@@ -416,6 +432,7 @@ let modalShortDescription;
 let modalIngredients;
 let modalAllergens;
 let modalPrice;
+let priceBlock;
 let closeButton;
 let imagePreview;
 let previewFrame;
@@ -614,6 +631,22 @@ function setActiveCategory(id) {
   });
 }
 
+function renderPrice(item) {
+  if (Array.isArray(item.sizes) && item.sizes.length) {
+    priceBlock.classList.add("price-block-multi");
+    priceBlock.innerHTML =
+      '<span>Fiyat</span><div class="price-rows">' +
+      item.sizes
+        .map((s) => `<div class="price-row"><em>${s.label}</em><strong>${s.price}</strong></div>`)
+        .join("") +
+      "</div>";
+  } else {
+    priceBlock.classList.remove("price-block-multi");
+    priceBlock.innerHTML = '<span>Fiyat</span><strong id="modalPrice"></strong>';
+    priceBlock.querySelector("strong").textContent = item.price;
+  }
+}
+
 function openDishModal(item, opener) {
   lastFocusedElement = opener;
   currentPreviewItem = item;
@@ -627,7 +660,7 @@ function openDishModal(item, opener) {
   modalShortDescription.textContent = item.shortDescription;
   fillList(modalIngredients, item.ingredients);
   fillList(modalAllergens, item.allergens);
-  modalPrice.textContent = item.price;
+  renderPrice(item);
 
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
@@ -760,6 +793,7 @@ function cacheElements() {
   modalIngredients = document.querySelector("#modalIngredients");
   modalAllergens = document.querySelector("#modalAllergens");
   modalPrice = document.querySelector("#modalPrice");
+  priceBlock = document.querySelector(".price-block");
   closeButton = document.querySelector(".close-button");
   imagePreview = document.querySelector("#imagePreview");
   previewFrame = document.querySelector("#previewFrame");
