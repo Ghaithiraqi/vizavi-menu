@@ -33,7 +33,7 @@ const menuData = [
   {
     name: "Yalanji (Yaprak Sarma)",
     category: "Soğuk Mezeler Menü",
-    price: "—",
+    price: "₺150,00",
     image: "./images/yalanji.jpg",
     shortDescription: "Zeytinyağı, pirinç ve baharatlarla sarılan asma yaprakları; nar taneleriyle ferah ve hafif bir meze.",
     ingredients: ["Asma yaprağı", "Pirinç", "Zeytinyağı", "Maydanoz", "Baharatlar", "Nar taneleri"],
@@ -43,7 +43,7 @@ const menuData = [
   {
     name: "Sezar Salatası",
     category: "Soğuk Mezeler Menü",
-    price: "—",
+    price: "₺300,00",
     image: "./images/sezar-salatasi.jpg",
     shortDescription: "Marul, ızgara tavuk, kruton ekmek ve rendelenmiş peynirle hazırlanan, özel sezar sosuyla servis edilen klasik salata.",
     ingredients: ["Marul", "Izgara tavuk", "Kruton ekmek", "Rendelenmiş peynir", "Domates", "Sezar sos"],
@@ -73,7 +73,7 @@ const menuData = [
   {
     name: "Tavuk Maqluba",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺575,00",
     image: "./images/tavuk-maqluba.jpg",
     shortDescription: "Baharatlı pirinç, tavuk ve közlenmiş sebzelerle katmanlı pişirilen, ters çevrilerek servis edilen geleneksel bir ana yemek.",
     ingredients: ["Pirinç", "Tavuk", "Patlıcan", "Baharatlar"],
@@ -83,7 +83,7 @@ const menuData = [
   {
     name: "Peynirli Arap Usulü Şavarma (Kaşarlı)",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺310,00",
     image: "./images/peynirli-arap-savarma.jpg",
     shortDescription: "Arap usulü baharatlı tavuk şavarma ve eriyen kaşar peyniri; çıtır patates ve özel soslarla servis edilir.",
     ingredients: ["Tavuk şavarma", "Kaşar peyniri", "Arap ekmeği", "Çıtır patates", "Özel soslar", "Turşu"],
@@ -93,7 +93,7 @@ const menuData = [
   {
     name: "Normal Şavarma Sandviçi",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺65,00",
     image: "./images/normal-savarma-sandvici.jpg",
     shortDescription: "Baharatlı tavuk şavarma, taze malzemeler ve özel soslarla dürümde; çıtır patates ve turşuyla servis edilir.",
     ingredients: ["Tavuk şavarma", "Lavaş / dürüm ekmeği", "Çıtır patates", "Turşu", "Özel soslar"],
@@ -113,7 +113,7 @@ const menuData = [
   {
     name: "Gaza Şavarması",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺290,00",
     image: "./images/gaza-savarmasi.jpg",
     shortDescription: "Gazze usulü baharatlı tavuk şavarma; ince ekmeğe sarılıp dilimlenir, çıtır patates ve özel sosla servis edilir.",
     ingredients: ["Tavuk şavarma", "İnce ekmek (saç ekmeği)", "Çıtır patates", "Turşu", "Özel sos"],
@@ -123,7 +123,7 @@ const menuData = [
   {
     name: "Double Arap Şavarması",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺350,00",
     image: "./images/double-arap-savarmasi.jpg",
     shortDescription: "Çift porsiyon baharatlı tavuk şavarma; ince ekmeğe sarılıp dilimlenir, çıtır patates ve üç çeşit sosla servis edilir.",
     ingredients: ["Tavuk şavarma (çift)", "İnce ekmek", "Çıtır patates", "Turşu", "Üç çeşit özel sos"],
@@ -143,7 +143,7 @@ const menuData = [
   {
     name: "Sahanda Yumurta",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺150,00",
     image: "./images/sahanda-yumurta.jpg",
     shortDescription: "Tabağında servis edilen, sarısı akışkan üç adet taze sahanda yumurta.",
     ingredients: ["Yumurta (3 adet)", "Tereyağı / zeytinyağı", "Tuz"],
