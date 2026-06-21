@@ -10,26 +10,32 @@
   <body>
     <div class="splash-screen" id="splashScreen" aria-hidden="true">
       <div class="splash-logo">
-        <span>V</span>
+        <img src="./images/logo.svg" alt="Vizavi Cafe & Restaurant logosu" id="splashLogo">
+        <span aria-hidden="true">Vizavi</span>
       </div>
       <p>Hoş Geldiniz</p>
     </div>
 
-    <header class="hero" id="top">
-      <div class="hero-ornament hero-ornament-left" aria-hidden="true"></div>
-      <div class="hero-ornament hero-ornament-right" aria-hidden="true"></div>
+    <header class="luxury-hero" id="top">
+      <div class="hero-slider" id="heroSlider" aria-label="Vizavi lezzet görselleri">
+        <div class="hero-slides" id="heroSlides"></div>
+        <button class="slider-arrow slider-arrow-prev" type="button" id="prevHero" aria-label="Önceki görsel">‹</button>
+        <button class="slider-arrow slider-arrow-next" type="button" id="nextHero" aria-label="Sonraki görsel">›</button>
+        <div class="slider-dots" id="heroDots" aria-label="Görsel seçimi"></div>
+      </div>
 
-      <div class="hero-inner">
+      <div class="hero-panel">
         <div class="hero-logo-wrap">
           <div class="hero-logo">
-            <!-- Logoyu değiştirmek için ./images/logo.png dosyasını kendi Vizavi logonuzla değiştirin. -->
-            <img src="./images/logo.png" alt="Vizavi Cafe & Restaurant logosu" id="brandLogo">
-            <span aria-hidden="true">V</span>
+            <!-- Logoyu değiştirmek için ./images/logo.svg dosyasını kendi Vizavi logonuzla değiştirin. -->
+            <img src="./images/logo.svg" alt="Vizavi Cafe & Restaurant logosu" id="brandLogo">
+            <span aria-hidden="true">Vizavi</span>
           </div>
         </div>
-
         <p class="hero-kicker">Kafe & Restoran</p>
         <h1>Vizavi Cafe & Restaurant</h1>
+        <p class="hero-slogan">Lezzetin En Doğal Hali</p>
+        <p class="hero-copy">Geleneksel tarifler, taze malzemeler ve unutulmaz bir deneyim.</p>
         <button class="hero-button" type="button" id="exploreMenu">Menüyü Keşfet</button>
       </div>
     </header>
@@ -54,24 +60,26 @@
           <span aria-hidden="true">&times;</span>
         </button>
 
-        <div class="modal-image-wrap">
+        <button class="modal-image-wrap image-frame is-loading" type="button" id="modalImageButton" aria-label="Görseli büyüt">
           <img id="modalImage" alt="">
           <div class="image-fallback" id="modalFallback" aria-hidden="true"></div>
-        </div>
+        </button>
 
         <div class="modal-content">
           <p class="modal-label">Lezzet Detayı</p>
           <h2 id="modalTitle"></h2>
           <p class="modal-description" id="modalShortDescription"></p>
 
-          <div class="detail-block">
-            <h3>İçindekiler</h3>
-            <ul id="modalIngredients"></ul>
-          </div>
+          <div class="detail-panel">
+            <div class="detail-block">
+              <h3>İçindekiler</h3>
+              <ul id="modalIngredients"></ul>
+            </div>
 
-          <div class="detail-block">
-            <h3>Alerjen Bilgisi</h3>
-            <ul id="modalAllergens"></ul>
+            <div class="detail-block">
+              <h3>Alerjen Bilgisi</h3>
+              <ul id="modalAllergens"></ul>
+            </div>
           </div>
 
           <div class="price-block">
@@ -80,6 +88,14 @@
           </div>
         </div>
       </section>
+    </div>
+
+    <div class="image-preview" id="imagePreview" aria-hidden="true">
+      <div class="preview-backdrop" data-close-preview></div>
+      <button class="preview-close" type="button" aria-label="Görseli kapat" data-close-preview>&times;</button>
+      <div class="preview-frame image-frame" id="previewFrame" data-fallback="V">
+        <img id="previewImage" alt="">
+      </div>
     </div>
   </body>
 </html>

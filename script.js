@@ -21,16 +21,6 @@ const menuData = [
     tags: ["🌱 Vejetaryen"],
   },
   {
-    name: "Cacık",
-    category: "Soğuk Mezeler Menü",
-    price: "₺100,00",
-    image: "./images/cacik.jpg",
-    shortDescription: "Yoğurt, salatalık ve nane ile serin, dengeli ve sade bir eşlikçi.",
-    ingredients: ["Yoğurt", "Salatalık", "Sarımsak", "Nane"],
-    allergens: ["Süt ürünleri içerir", "Alerjen bilgisi için lütfen personele danışınız"],
-    tags: ["🌱 Vejetaryen"],
-  },
-  {
     name: "Mütebbel",
     category: "Soğuk Mezeler Menü",
     price: "₺250,00",
@@ -41,13 +31,133 @@ const menuData = [
     tags: ["🌱 Vejetaryen"],
   },
   {
-    name: "Patates Kızartması",
-    category: "Sıcak Mezeler Menü",
-    price: "₺170,00",
-    image: "./images/patates-kizartmasi.jpg",
-    shortDescription: "Dışı çıtır, içi yumuşak sıcak patatesler; klasik soslarla servis edilir.",
-    ingredients: ["Patates", "Ketçap", "Mayonez"],
-    allergens: ["Yumurta içerebilir", "Alerjen bilgisi için lütfen personele danışınız"],
+    name: "Yalanji (Yaprak Sarma)",
+    category: "Soğuk Mezeler Menü",
+    price: "—",
+    image: "./images/yalanji.jpg",
+    shortDescription: "Zeytinyağı, pirinç ve baharatlarla sarılan asma yaprakları; nar taneleriyle ferah ve hafif bir meze.",
+    ingredients: ["Asma yaprağı", "Pirinç", "Zeytinyağı", "Maydanoz", "Baharatlar", "Nar taneleri"],
+    allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["🌱 Vejetaryen"],
+  },
+  {
+    name: "Sezar Salatası",
+    category: "Soğuk Mezeler Menü",
+    price: "—",
+    image: "./images/sezar-salatasi.jpg",
+    shortDescription: "Marul, ızgara tavuk, kruton ekmek ve rendelenmiş peynirle hazırlanan, özel sezar sosuyla servis edilen klasik salata.",
+    ingredients: ["Marul", "Izgara tavuk", "Kruton ekmek", "Rendelenmiş peynir", "Domates", "Sezar sos"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Yumurta içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
+  },
+  {
+    name: "Meze Tabağı",
+    category: "Soğuk Mezeler Menü",
+    price: "—",
+    image: "./images/meze-tabagi.jpg",
+    shortDescription: "Hummus, mütebbel, teboleh ve çıtır sarmalarla zenginleşen, paylaşmalık karışık soğuk meze tabağı.",
+    ingredients: ["Hummus", "Mütebbel", "Teboleh", "Çıtır sarma", "Falafel", "Nar taneleri"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
+  },
+  {
+    name: "Baba Ghanoush",
+    category: "Soğuk Mezeler Menü",
+    price: "—",
+    image: "./images/baba-ghanoush.jpg",
+    shortDescription: "Közlenmiş patlıcanın isli aromasıyla; biber, nar ekşisi ve zeytinyağıyla hazırlanan çıtır dokulu meze.",
+    ingredients: ["Közlenmiş patlıcan", "Biber", "Domates", "Nar ekşisi", "Zeytinyağı", "Nar taneleri"],
+    allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["🌱 Vejetaryen"],
+  },
+  {
+    name: "Tavuk Maqluba",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/tavuk-maqluba.jpg",
+    shortDescription: "Baharatlı pirinç, tavuk ve közlenmiş sebzelerle katmanlı pişirilen, ters çevrilerek servis edilen geleneksel bir ana yemek.",
+    ingredients: ["Pirinç", "Tavuk", "Patlıcan", "Baharatlar"],
+    allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
+  },
+  {
+    name: "Peynirli Arap Usulü Şavarma (Kaşarlı)",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/peynirli-arap-savarma.jpg",
+    shortDescription: "Arap usulü baharatlı tavuk şavarma ve eriyen kaşar peyniri; çıtır patates ve özel soslarla servis edilir.",
+    ingredients: ["Tavuk şavarma", "Kaşar peyniri", "Arap ekmeği", "Çıtır patates", "Özel soslar", "Turşu"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
+  },
+  {
+    name: "Normal Şavarma Sandviçi",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/normal-savarma-sandvici.jpg",
+    shortDescription: "Baharatlı tavuk şavarma, taze malzemeler ve özel soslarla dürümde; çıtır patates ve turşuyla servis edilir.",
+    ingredients: ["Tavuk şavarma", "Lavaş / dürüm ekmeği", "Çıtır patates", "Turşu", "Özel soslar"],
+    allergens: ["Gluten içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: [],
+  },
+  {
+    name: "Filistinli Musakhan",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/filistinli-musakhan.jpg",
+    shortDescription: "Sumaklı soğan ve baharatlı tavukla hazırlanan, ince ekmeğe sarılıp fırınlanan geleneksel Filistin lezzeti.",
+    ingredients: ["Tavuk", "Sumaklı soğan", "İnce ekmek", "Zeytinyağı", "Baharatlar", "Yoğurt sos"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
+  },
+  {
+    name: "Gaza Şavarması",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/gaza-savarmasi.jpg",
+    shortDescription: "Gazze usulü baharatlı tavuk şavarma; ince ekmeğe sarılıp dilimlenir, çıtır patates ve özel sosla servis edilir.",
+    ingredients: ["Tavuk şavarma", "İnce ekmek (saç ekmeği)", "Çıtır patates", "Turşu", "Özel sos"],
+    allergens: ["Gluten içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["🔥 Sıcak"],
+  },
+  {
+    name: "Double Arap Şavarması",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/double-arap-savarmasi.jpg",
+    shortDescription: "Çift porsiyon baharatlı tavuk şavarma; ince ekmeğe sarılıp dilimlenir, çıtır patates ve üç çeşit sosla servis edilir.",
+    ingredients: ["Tavuk şavarma (çift)", "İnce ekmek", "Çıtır patates", "Turşu", "Üç çeşit özel sos"],
+    allergens: ["Gluten içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
+  },
+  {
+    name: "Omlet",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/omlet.jpg",
+    shortDescription: "Çırpılmış yumurta, domates ve biberle hazırlanan, naneyle servis edilen sıcacık omlet.",
+    ingredients: ["Yumurta", "Domates", "Biber", "Soğan", "Baharatlar"],
+    allergens: ["Yumurta içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["🔥 Sıcak"],
+  },
+  {
+    name: "Sahanda Yumurta",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/sahanda-yumurta.jpg",
+    shortDescription: "Tabağında servis edilen, sarısı akışkan üç adet taze sahanda yumurta.",
+    ingredients: ["Yumurta (3 adet)", "Tereyağı / zeytinyağı", "Tuz"],
+    allergens: ["Yumurta içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: [],
+  },
+  {
+    name: "Kıymalı Yumurta",
+    category: "Ana Yemekler",
+    price: "—",
+    image: "./images/etli-yumurta.jpg",
+    shortDescription: "Baharatlı kıyma, biber ve domatesle pişirilen, yumurtayla taçlandırılan sıcak tava yemeği.",
+    ingredients: ["Kıyma", "Yumurta", "Domates", "Biber", "Baharatlar"],
+    allergens: ["Yumurta içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["🔥 Sıcak"],
   },
   {
@@ -71,26 +181,6 @@ const menuData = [
     tags: ["🔥 Sıcak"],
   },
   {
-    name: "Falafel (Adet)",
-    category: "Falafel Menü",
-    price: "₺22,78",
-    image: "./images/falafel-adet.jpg",
-    shortDescription: "Nohut, özel baharatlar ve otlarla hazırlanan çıtır dış yüzeyli klasik falafel.",
-    ingredients: ["Falafel", "Nohut", "Özel baharatlar", "Ot"],
-    allergens: ["Susam içerebilir", "Alerjen bilgisi için lütfen personele danışınız"],
-    tags: ["🌱 Vejetaryen"],
-  },
-  {
-    name: "Süper Falafel Sandviç",
-    category: "Falafel Menü",
-    price: "₺244,44",
-    image: "./images/super-falafel-sandvic.jpg",
-    shortDescription: "Falafel, patlıcan, çıtır patates ve özel sosla doyurucu bir sokak lezzeti.",
-    ingredients: ["Çıtır falafel köfteleri", "Patlıcan", "Çıtır patates kızartması", "Özel sos"],
-    allergens: ["Gluten içerir", "Susam içerebilir", "Alerjen bilgisi için lütfen personele danışınız"],
-    tags: ["⭐ Popüler"],
-  },
-  {
     name: "Falafel Sandviç",
     category: "Falafel Menü",
     price: "₺220,00",
@@ -101,43 +191,33 @@ const menuData = [
     tags: ["🌱 Vejetaryen"],
   },
   {
-    name: "Falafel Menü (Porsiyon)",
+    name: "Tavuk Şavarma ile Doldurulmuş Falafel",
     category: "Falafel Menü",
-    price: "₺325,00",
-    image: "./images/falafel-menu-porsiyon.jpg",
-    shortDescription: "Falafel, hummus ve çıtır patateslerle tabakta zengin ve dengeli bir porsiyon.",
-    ingredients: ["Falafel", "Hummus", "Çıtır patatesler", "Taze sebzeler veya yeşillikler"],
+    price: "—",
+    image: "./images/tavuk-savarma-falafel.jpg",
+    shortDescription: "Çıtır falafelin içinde baharatlı tavuk şavarma; susamla kaplanmış, maydanozla servis edilen özel bir lezzet.",
+    ingredients: ["Çıtır falafel", "Tavuk şavarma", "Susam", "Maydanoz"],
     allergens: ["Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["⭐ Popüler"],
   },
   {
-    name: "Foul (Bakla Ezmesi)",
-    category: "Hummus Menü",
-    price: "₺283,33",
-    image: "./images/foul-bakla-ezmesi.jpg",
-    shortDescription: "Baklanın zeytinyağı, sarımsak ve limonla buluştuğu güçlü ve geleneksel bir tabak.",
-    ingredients: ["Fava fasulyesi", "Zeytinyağı", "Sarımsak", "Limon", "Baharat", "2 adet ekmek"],
-    allergens: ["Gluten içerir", "Alerjen bilgisi için lütfen personele danışınız"],
-    tags: ["🌱 Vejetaryen"],
-  },
-  {
-    name: "Kudsiye",
-    category: "Hummus Menü",
-    price: "₺376,67",
-    image: "./images/kudsiye.jpg",
-    shortDescription: "Hummus üzerine baharatlı fava, zeytinyağı ve taze otlarla katmanlı bir lezzet.",
-    ingredients: ["Hummus", "Baharatlarla pişirilmiş fava fasulyesi", "Zeytinyağı", "Limon", "Taze otlar", "2 adet ekmek"],
+    name: "Falafel Tabağı (Servis)",
+    category: "Falafel Menü",
+    price: "—",
+    image: "./images/falafel-serves.jpg",
+    shortDescription: "Çıtır falafel, hummus, çıtır patates ve taze sebzelerle hazırlanan, turşuyla servis edilen doyurucu falafel tabağı.",
+    ingredients: ["Çıtır falafel", "Hummus", "Çıtır patates", "Taze sebzeler", "Turşu"],
     allergens: ["Gluten içerir", "Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["⭐ Popüler"],
   },
   {
-    name: "Musabaha",
-    category: "Hummus Menü",
-    price: "₺340,00",
-    image: "./images/musabaha.jpg",
-    shortDescription: "Nohut taneleri, baharatlar ve zeytinyağıyla sıcak karakterli bir hummus yorumu.",
-    ingredients: ["Hummus", "Nohut taneleri", "Zeytinyağı", "Baharatlar", "2 adet ekmek"],
-    allergens: ["Gluten içerir", "Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    name: "Falafel Porsiyon",
+    category: "Falafel Menü",
+    price: "—",
+    image: "./images/falafil-porsiyon.jpg",
+    shortDescription: "Nohut ve özel baharatlarla hazırlanan, dışı çıtır içi yumuşak falafel köftelerinden oluşan porsiyon.",
+    ingredients: ["Falafel", "Nohut", "Özel baharatlar", "Susam"],
+    allergens: ["Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["🌱 Vejetaryen"],
   },
   {
@@ -149,16 +229,6 @@ const menuData = [
     ingredients: ["Hummus", "Kavrulmuş bademler", "Taze ekmek parçaları", "Özel soslar"],
     allergens: ["Gluten içerir", "Susam içerir", "Kuruyemiş içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["⭐ Popüler"],
-  },
-  {
-    name: "Kıymalı Hummus",
-    category: "Hummus Menü",
-    price: "₺400,00",
-    image: "./images/kiymali-hummus.jpg",
-    shortDescription: "Klasik hummusun üzerine baharatlı et dokunuşuyla daha yoğun ve doyurucu bir tabak.",
-    ingredients: ["Klasik hummus", "Pişirilmiş et", "Baharatlar", "2 adet ekmek"],
-    allergens: ["Gluten içerir", "Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
-    tags: ["🔥 Sıcak"],
   },
   {
     name: "Hummus Tabağı",
@@ -191,115 +261,141 @@ const menuData = [
     tags: ["🔥 Sıcak"],
   },
   {
-    name: "Büyük Zahterli Peynirli Pide (Manakış)",
+    name: "Zahterli Peynirli Pide (Manakış)",
     category: "Taş Fırında Menü",
-    price: "₺378,89",
-    image: "./images/buyuk-zahterli-peynirli-pide-manakis.jpg",
-    shortDescription: "Zahterin aromatik dokusu ve erimiş peynirle taş fırından sıcak çıkar.",
-    ingredients: ["Özel zahter karışımı", "Erimiş peynir"],
+    price: "—",
+    image: "./images/zahterli-peynirli-pide.jpg",
+    shortDescription: "Aromatik zahter karışımı ve erimiş peynirle taş fırında pişen, sıcak ve doyurucu manakış.",
+    ingredients: ["İncecik hamur", "Özel zahter karışımı", "Erimiş peynir"],
     allergens: ["Gluten içerir", "Süt ürünleri içerir", "Susam içerebilir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["🔥 Sıcak"],
   },
   {
-    name: "Büyük Zahterli Pide (Manakış)",
+    name: "Zahterli Pide (Manakış)",
     category: "Taş Fırında Menü",
-    price: "₺300,00",
-    image: "./images/buyuk-zahterli-pide-manakis.jpg",
-    shortDescription: "Özel zahter karışımıyla hazırlanan ince hamurlu, kokusu güçlü taş fırın lezzeti.",
+    price: "—",
+    image: "./images/zahterli-pide.jpg",
+    shortDescription: "Özel zahter karışımıyla hazırlanan ince hamurlu, kokusu güçlü klasik taş fırın manakışı.",
     ingredients: ["İncecik hamur", "Özel zahter karışımı"],
     allergens: ["Gluten içerir", "Susam içerebilir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["🌱 Vejetaryen"],
   },
   {
-    name: "Lübnan Geceleri",
+    name: "Lahmacun",
+    category: "Taş Fırında Menü",
+    price: "—",
+    image: "./images/lahmacun.jpg",
+    shortDescription: "İncecik hamur üzerine baharatlı kıyma harcı; taş fırında pişen, maydanoz ve limonla servis edilen klasik lahmacun.",
+    ingredients: ["İncecik hamur", "Kıyma", "Domates", "Biber", "Maydanoz", "Baharatlar"],
+    allergens: ["Gluten içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["🔥 Sıcak"],
+  },
+  {
+    name: "Peynir Maamoul",
     category: "Tatlı Menü",
-    price: "₺248,33",
-    image: "./images/lubnan-geceleri.jpg",
-    shortDescription: "Gül suyu aroması, özel krema ve antep fıstığıyla zarif bir Lübnan tatlısı.",
-    ingredients: ["Semolina", "Özel krema", "Gül suyu", "Antep fıstığı"],
+    price: "—",
+    image: "./images/peynir-maamoul.jpg",
+    shortDescription: "İçi peynirle doldurulmuş, pudra şekeri ve antep fıstığıyla servis edilen geleneksel maamul tatlısı.",
+    ingredients: ["İrmik / un hamuru", "Peynir", "Pudra şekeri", "Antep fıstığı"],
     allergens: ["Gluten içerir", "Süt ürünleri içerir", "Kuruyemiş içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: [],
+  },
+  {
+    name: "Türk Çayı",
+    category: "İçecek Menü",
+    price: "—",
+    image: "./images/turk-cayi.jpg",
+    shortDescription: "İnce belli bardakta, tavşan kanı demlenmiş geleneksel Türk çayı; her yudumda sıcacık bir keyif.",
+    ingredients: ["Demlenmiş siyah çay", "Sıcak servis"],
+    allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["⭐ Popüler"],
   },
   {
-    name: "Cola Turka (330 ml)",
+    name: "Beypazarı Çilek Aromalı",
     category: "İçecek Menü",
-    price: "₺65,00",
-    image: "./images/cola-turka-330-ml.jpg",
-    shortDescription: "Yemeklere eşlik eden soğuk ve ferahlatıcı gazlı içecek.",
+    price: "—",
+    image: "./images/beypazari-cilek.jpg",
+    shortDescription: "Çilek aromasıyla tatlanmış, zengin mineralli ve canlı baloncuklu ferahlatıcı maden suyu.",
+    ingredients: ["Doğal maden suyu", "Çilek aroması", "200 ml"],
+    allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
+    tags: [],
+  },
+  {
+    name: "Cola Turka",
+    category: "İçecek Menü",
+    price: "—",
+    image: "./images/cola-turka.jpg",
+    shortDescription: "Yemeklere eşlik eden, helal sertifikalı, soğuk ve gazlı klasik kola keyfi.",
     ingredients: ["Cola Turka", "330 ml"],
     allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
     tags: [],
   },
   {
-    name: "Ayran (170 ml)",
+    name: "Fuse Tea Şeftali",
     category: "İçecek Menü",
-    price: "₺40,00",
-    image: "./images/ayran-170-ml.jpg",
-    shortDescription: "Geleneksel, serin ve hafif ayran.",
-    ingredients: ["Ayran", "170 ml"],
-    allergens: ["Süt ürünleri içerir", "Alerjen bilgisi için lütfen personele danışınız"],
-    tags: [],
-  },
-  {
-    name: "Ayran (270 ml)",
-    category: "İçecek Menü",
-    price: "₺55,00",
-    image: "./images/ayran-270-ml.jpg",
-    shortDescription: "Daha büyük porsiyonda geleneksel ayran.",
-    ingredients: ["Ayran", "270 ml"],
-    allergens: ["Süt ürünleri içerir", "Alerjen bilgisi için lütfen personele danışınız"],
-    tags: [],
-  },
-  {
-    name: "Sıkma Portakal Suyu (330 ml)",
-    category: "İçecek Menü",
-    price: "₺180,00",
-    image: "./images/sikma-portakal-suyu-330-ml.jpg",
-    shortDescription: "Taze sıkılmış portakalın canlı ve doğal ferahlığı.",
-    ingredients: ["Taze sıkılmış portakal suyu", "330 ml"],
+    price: "—",
+    image: "./images/fuse-tea-seftali.jpg",
+    shortDescription: "Şeftali aromasıyla hazırlanan, koruyucu ve renklendirici içermeyen serinletici ice tea.",
+    ingredients: ["Fuse Tea", "Şeftali aromalı", "330 ml"],
     allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["⭐ Popüler"],
   },
   {
-    name: "Sıkma Limonata (300 ml)",
+    name: "Beypazarı Limon Aromalı",
     category: "İçecek Menü",
-    price: "₺160,00",
-    image: "./images/sikma-limonata-300-ml.jpg",
-    shortDescription: "Taze limon aromasıyla dengeli, serinletici limonata.",
-    ingredients: ["Taze limonata", "300 ml"],
+    price: "—",
+    image: "./images/beypazari-limon.jpg",
+    shortDescription: "Limon aromasının canlı ekşiliğiyle buluşan, zengin mineralli ferahlatıcı maden suyu.",
+    ingredients: ["Doğal maden suyu", "Limon aroması", "200 ml"],
     allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
     tags: [],
   },
   {
-    name: "Limonlu Soda (200 ml)",
+    name: "Sarıyer Gazoz",
     category: "İçecek Menü",
-    price: "₺45,00",
-    image: "./images/limonlu-soda-200-ml.jpg",
-    shortDescription: "Limon aromalı, hafif ve ferah soda.",
-    ingredients: ["Limon aromalı soda", "200 ml"],
+    price: "—",
+    image: "./images/sariyer-gazoz.jpg",
+    shortDescription: "Nostaljik tadıyla, soğuk ve bol gazlı klasik sade gazoz keyfi.",
+    ingredients: ["Sarıyer Gazoz", "Kutu"],
     allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
     tags: [],
   },
   {
-    name: "Sade Soda (200 ml)",
+    name: "Sarıyer Portakal Aromalı Gazoz",
     category: "İçecek Menü",
-    price: "₺40,00",
-    image: "./images/sade-soda-200-ml.jpg",
-    shortDescription: "Yemek yanında sade ve ferah bir içecek.",
-    ingredients: ["Sade soda", "200 ml"],
+    price: "—",
+    image: "./images/sariyer-portakal-gazoz.jpg",
+    shortDescription: "Portakal aromasıyla tatlanmış, ferahlatıcı ve gazlı meyveli gazoz.",
+    ingredients: ["Sarıyer Gazoz", "Portakal aromalı", "Kutu"],
     allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
     tags: [],
   },
   {
-    name: "Su (500 ml)",
+    name: "Sarıyer Kola (Şekersiz)",
     category: "İçecek Menü",
-    price: "₺30,00",
-    image: "./images/su-500-ml.jpg",
-    shortDescription: "Serin ve sade içme suyu.",
-    ingredients: ["Su", "500 ml"],
+    price: "—",
+    image: "./images/sariyer-kola.jpg",
+    shortDescription: "Şekersiz (zero) formülüyle hazırlanan, hafif ve gazlı serinletici kola.",
+    ingredients: ["Sarıyer Kola", "Şekersiz / Zero", "Kutu"],
     allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
     tags: [],
   },
+  {
+    name: "Saka Su (0,5 L)",
+    category: "İçecek Menü",
+    price: "—",
+    image: "./images/saka-su.jpg",
+    shortDescription: "pH 8,22 değerinde, doğal kaynaktan gelen serin ve dengeli mineralli su.",
+    ingredients: ["Doğal mineralli su", "0,5 L"],
+    allergens: ["Alerjen bilgisi için lütfen personele danışınız"],
+    tags: [],
+  },
+];
+
+const heroSlides = [
+  { image: "./images/hero-1.jpg", fallback: "V" },
+  { image: "./images/hero-2.jpg", fallback: "Z" },
+  { image: "./images/hero-3.jpg", fallback: "R" },
 ];
 
 let categoryBar;
@@ -307,8 +403,14 @@ let categoryShell;
 let menuSections;
 let exploreMenu;
 let splashScreen;
+let splashLogo;
 let brandLogo;
+let heroSlidesElement;
+let heroDots;
+let prevHero;
+let nextHero;
 let modal;
+let modalImageButton;
 let modalImage;
 let modalFallback;
 let modalTitle;
@@ -317,30 +419,28 @@ let modalIngredients;
 let modalAllergens;
 let modalPrice;
 let closeButton;
+let imagePreview;
+let previewFrame;
+let previewImage;
+let previewClose;
 
 let lastFocusedElement = null;
+let currentHeroSlide = 0;
+let heroTimer = null;
+let currentPreviewItem = null;
 
 const categoryOrder = [...new Set(menuData.map((item) => item.category))];
 
 function getCategoryDisplay(category) {
-  switch (category) {
-    case "Soğuk Mezeler Menü":
-      return { icon: "🍃", label: "Soğuk Mezeler" };
-    case "Sıcak Mezeler Menü":
-      return { icon: "🔥", label: "Sıcak Mezeler" };
-    case "Falafel Menü":
-      return { icon: "🧆", label: "Falafel" };
-    case "Hummus Menü":
-      return { icon: "🥣", label: "Hummus" };
-    case "Taş Fırında Menü":
-      return { icon: "🫓", label: "Taş Fırında" };
-    case "Tatlı Menü":
-      return { icon: "🍰", label: "Tatlı" };
-    case "İçecek Menü":
-      return { icon: "🥤", label: "İçecek" };
-    default:
-      return { icon: "•", label: category.replace(" Menü", "") };
-  }
+  if (category.includes("Soğuk")) return { icon: "🍃", label: "Soğuk Mezeler" };
+  if (category.includes("Sıcak")) return { icon: "🔥", label: "Sıcak Mezeler" };
+  if (category.includes("Ana Yemek")) return { icon: "🍗", label: "Ana Yemekler" };
+  if (category.includes("Falafel")) return { icon: "🧆", label: "Falafel" };
+  if (category.includes("Hummus")) return { icon: "🥣", label: "Hummus" };
+  if (category.includes("Taş")) return { icon: "🫓", label: "Taş Fırında" };
+  if (category.includes("Tatlı")) return { icon: "🍰", label: "Tatlı" };
+  if (category.includes("İçecek")) return { icon: "🥤", label: "İçecek" };
+  return { icon: "•", label: category.replace(" Menü", "") };
 }
 
 const slugify = (text) =>
@@ -353,19 +453,73 @@ const slugify = (text) =>
     .replace(/^-|-$/g, "");
 
 function getInitials(name) {
-  return name
-    .split(" ")
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((word) => word[0])
-    .join("")
-    .toLocaleUpperCase("tr");
+  return name.trim().charAt(0).toLocaleUpperCase("tr");
 }
 
-function markMissingImage(event) {
-  const image = event.currentTarget;
-  image.classList.add("image-missing");
-  image.closest(".dish-image")?.classList.add("has-missing");
+function setupImageLifecycle(image) {
+  const frame = image.closest(".image-frame");
+  image.addEventListener("load", () => {
+    frame?.classList.remove("is-loading");
+    image.classList.remove("image-missing");
+  });
+  image.addEventListener("error", () => {
+    frame?.classList.remove("is-loading");
+    frame?.classList.add("has-missing");
+    image.classList.add("image-missing");
+  });
+}
+
+function renderHeroSlider() {
+  heroSlidesElement.innerHTML = "";
+  heroDots.innerHTML = "";
+
+  heroSlides.forEach((slide, index) => {
+    const slideElement = document.createElement("div");
+    slideElement.className = `hero-slide${index === 0 ? " is-active" : ""}`;
+    slideElement.innerHTML = `
+      <div class="hero-slide-image image-frame is-loading" data-fallback="${slide.fallback}">
+        <img src="${slide.image}" alt="Vizavi lezzet görseli ${index + 1}">
+      </div>
+    `;
+    setupImageLifecycle(slideElement.querySelector("img"));
+    heroSlidesElement.append(slideElement);
+
+    const dot = document.createElement("button");
+    dot.className = `slider-dot${index === 0 ? " is-active" : ""}`;
+    dot.type = "button";
+    dot.setAttribute("aria-label", `${index + 1}. görsel`);
+    dot.addEventListener("click", () => {
+      setHeroSlide(index);
+      restartHeroTimer();
+    });
+    heroDots.append(dot);
+  });
+}
+
+function setHeroSlide(index) {
+  const slides = document.querySelectorAll(".hero-slide");
+  const dots = document.querySelectorAll(".slider-dot");
+  currentHeroSlide = (index + slides.length) % slides.length;
+
+  slides.forEach((slide, slideIndex) => {
+    slide.classList.toggle("is-active", slideIndex === currentHeroSlide);
+  });
+  dots.forEach((dot, dotIndex) => {
+    dot.classList.toggle("is-active", dotIndex === currentHeroSlide);
+  });
+}
+
+function nextHeroSlide() {
+  setHeroSlide(currentHeroSlide + 1);
+}
+
+function restartHeroTimer() {
+  window.clearInterval(heroTimer);
+  heroTimer = window.setInterval(nextHeroSlide, 4000);
+}
+
+function cleanTag(tag) {
+  return tag.replace(/[🌱⭐🔥]/gu, "").trim();
 }
 
 function renderCategories() {
@@ -394,6 +548,7 @@ function fillList(list, items) {
 
 function renderMenu() {
   menuSections.innerHTML = "";
+  let cardIndex = 0;
 
   categoryOrder.forEach((category) => {
     const sectionItems = menuData.filter((item) => item.category === category);
@@ -414,23 +569,24 @@ function renderMenu() {
       const card = document.createElement("button");
       card.className = "dish-card";
       card.type = "button";
+      card.style.setProperty("--delay", `${Math.min(cardIndex * 35, 420)}ms`);
       card.setAttribute("aria-label", `${item.name} detayını aç`);
 
       const imageWrap = document.createElement("div");
-      imageWrap.className = "dish-image";
+      imageWrap.className = "dish-image image-frame is-loading";
       imageWrap.dataset.fallback = getInitials(item.name);
 
       const image = document.createElement("img");
       image.src = item.image;
       image.alt = item.name;
       image.loading = "lazy";
-      image.addEventListener("error", markMissingImage);
+      setupImageLifecycle(image);
       imageWrap.append(image);
 
       if (item.tags.length > 0) {
         const tag = document.createElement("span");
         tag.className = "tag";
-        tag.textContent = item.tags[0];
+        tag.textContent = cleanTag(item.tags[0]);
         imageWrap.append(tag);
       }
 
@@ -441,6 +597,7 @@ function renderMenu() {
       card.append(imageWrap, name);
       card.addEventListener("click", () => openDishModal(item, card));
       grid.append(card);
+      cardIndex += 1;
     });
 
     section.append(heading, grid);
@@ -461,6 +618,9 @@ function setActiveCategory(id) {
 
 function openDishModal(item, opener) {
   lastFocusedElement = opener;
+  currentPreviewItem = item;
+  modalImageButton.classList.add("is-loading");
+  modalImageButton.classList.remove("has-missing");
   modalImage.src = item.image;
   modalImage.alt = item.name;
   modalImage.classList.remove("image-missing");
@@ -474,7 +634,7 @@ function openDishModal(item, opener) {
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-lock");
-  document.querySelector(".close-button").focus();
+  closeButton.focus();
 }
 
 function closeDishModal() {
@@ -487,9 +647,41 @@ function closeDishModal() {
   }
 }
 
+function openImagePreview() {
+  if (!currentPreviewItem) return;
+
+  previewFrame.classList.add("is-loading");
+  previewFrame.classList.remove("has-missing");
+  previewFrame.dataset.fallback = getInitials(currentPreviewItem.name);
+  previewImage.src = currentPreviewItem.image;
+  previewImage.alt = currentPreviewItem.name;
+  previewImage.classList.remove("image-missing");
+  imagePreview.classList.add("open");
+  imagePreview.setAttribute("aria-hidden", "false");
+  document.body.classList.add("preview-lock");
+  previewClose.focus();
+}
+
+function closeImagePreview() {
+  imagePreview.classList.remove("open");
+  imagePreview.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("preview-lock");
+  closeButton.focus();
+}
+
 function bindEvents() {
   exploreMenu.addEventListener("click", () => {
     categoryShell.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  prevHero.addEventListener("click", () => {
+    setHeroSlide(currentHeroSlide - 1);
+    restartHeroTimer();
+  });
+
+  nextHero.addEventListener("click", () => {
+    setHeroSlide(currentHeroSlide + 1);
+    restartHeroTimer();
   });
 
   categoryBar.addEventListener("click", (event) => {
@@ -507,24 +699,33 @@ function bindEvents() {
 
   modal.addEventListener("click", (event) => {
     const closeTarget = event.target.closest("[data-close-modal]");
+    if (closeTarget && modal.contains(closeTarget)) closeDishModal();
+  });
 
-    if (closeTarget && modal.contains(closeTarget)) {
-      closeDishModal();
-    }
+  modalImageButton.addEventListener("click", openImagePreview);
+  setupImageLifecycle(modalImage);
+  setupImageLifecycle(previewImage);
+
+  imagePreview.addEventListener("click", (event) => {
+    if (event.target.closest("[data-close-preview]")) closeImagePreview();
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && modal.classList.contains("open")) {
-      closeDishModal();
+    if (event.key !== "Escape") return;
+    if (imagePreview.classList.contains("open")) {
+      closeImagePreview();
+      return;
     }
+    if (modal.classList.contains("open")) closeDishModal();
   });
 
-  modalImage.addEventListener("error", (event) => {
-    event.currentTarget.classList.add("image-missing");
-  });
-
-  brandLogo.addEventListener("error", (event) => {
-    event.currentTarget.classList.add("image-missing");
+  [splashLogo, brandLogo].forEach((logo) => {
+    logo.addEventListener("load", () => {
+      logo.classList.remove("image-missing");
+    });
+    logo.addEventListener("error", () => {
+      logo.classList.add("image-missing");
+    });
   });
 }
 
@@ -535,12 +736,10 @@ function observeSections() {
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-      if (visibleEntry) {
-        setActiveCategory(visibleEntry.target.dataset.category);
-      }
+      if (visibleEntry) setActiveCategory(visibleEntry.target.dataset.category);
     },
     {
-      rootMargin: "-92px 0px -56% 0px",
+      rootMargin: "-88px 0px -58% 0px",
       threshold: [0.18, 0.32, 0.5],
     },
   );
@@ -551,7 +750,7 @@ function observeSections() {
 function hideSplash() {
   window.setTimeout(() => {
     splashScreen.classList.add("is-hidden");
-  }, 1000);
+  }, 900);
 }
 
 function cacheElements() {
@@ -560,8 +759,14 @@ function cacheElements() {
   menuSections = document.querySelector("#menuSections");
   exploreMenu = document.querySelector("#exploreMenu");
   splashScreen = document.querySelector("#splashScreen");
+  splashLogo = document.querySelector("#splashLogo");
   brandLogo = document.querySelector("#brandLogo");
+  heroSlidesElement = document.querySelector("#heroSlides");
+  heroDots = document.querySelector("#heroDots");
+  prevHero = document.querySelector("#prevHero");
+  nextHero = document.querySelector("#nextHero");
   modal = document.querySelector("#dishModal");
+  modalImageButton = document.querySelector("#modalImageButton");
   modalImage = document.querySelector("#modalImage");
   modalFallback = document.querySelector("#modalFallback");
   modalTitle = document.querySelector("#modalTitle");
@@ -570,14 +775,20 @@ function cacheElements() {
   modalAllergens = document.querySelector("#modalAllergens");
   modalPrice = document.querySelector("#modalPrice");
   closeButton = document.querySelector(".close-button");
+  imagePreview = document.querySelector("#imagePreview");
+  previewFrame = document.querySelector("#previewFrame");
+  previewImage = document.querySelector("#previewImage");
+  previewClose = document.querySelector(".preview-close");
 }
 
 function initializeMenu() {
   cacheElements();
+  renderHeroSlider();
   renderCategories();
   renderMenu();
   bindEvents();
   observeSections();
+  restartHeroTimer();
   hideSplash();
 }
 
