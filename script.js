@@ -407,8 +407,6 @@ let splashLogo;
 let brandLogo;
 let heroSlidesElement;
 let heroDots;
-let prevHero;
-let nextHero;
 let modal;
 let modalImageButton;
 let modalImage;
@@ -674,16 +672,6 @@ function bindEvents() {
     categoryShell.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  prevHero.addEventListener("click", () => {
-    setHeroSlide(currentHeroSlide - 1);
-    restartHeroTimer();
-  });
-
-  nextHero.addEventListener("click", () => {
-    setHeroSlide(currentHeroSlide + 1);
-    restartHeroTimer();
-  });
-
   categoryBar.addEventListener("click", (event) => {
     const tab = event.target.closest(".category-tab");
     if (!tab) return;
@@ -763,8 +751,6 @@ function cacheElements() {
   brandLogo = document.querySelector("#brandLogo");
   heroSlidesElement = document.querySelector("#heroSlides");
   heroDots = document.querySelector("#heroDots");
-  prevHero = document.querySelector("#prevHero");
-  nextHero = document.querySelector("#nextHero");
   modal = document.querySelector("#dishModal");
   modalImageButton = document.querySelector("#modalImageButton");
   modalImage = document.querySelector("#modalImage");
