@@ -250,7 +250,7 @@ const menuData = [
     price: "₺230,00",
     image: "./images/super-falafel-sandvic.jpg",
     shortDescription: "Bol falafel, patlıcan, çıtır patates ve özel soslarla zenginleştirilmiş doyurucu süper sandviç.",
-    ingredients: ["Çıtır falafel", "Patlıcan", "Çıtır patates", "Taze sebzeler", "Özel sos", "İnce ekmek"],
+    ingredients: ["Hummus", "Falafel", "Tahin sos", "Salata", "Kızarmış patlıcan", "Çıtır patates"],
     allergens: ["Gluten içerir", "Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["⭐ Popüler"],
   },
@@ -267,7 +267,7 @@ const menuData = [
   {
     name: "Bademli Hummus Fatte",
     category: "Hummus Menü",
-    price: "₺472,22",
+    price: "₺350,00",
     image: "./images/bademli-hummus-fatte.jpg",
     shortDescription: "Kavrulmuş badem, taze ekmek parçaları ve özel soslarla zenginleşen premium hummus.",
     ingredients: ["Hummus", "Kavrulmuş bademler", "Taze ekmek parçaları", "Özel soslar"],
