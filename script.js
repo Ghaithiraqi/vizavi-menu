@@ -339,12 +339,12 @@ const menuData = [
     tags: ["🌱 Vejetaryen"],
   },
   {
-    name: "Büyük Peynirli Pide (Manakış)",
+    name: "Peynirli Pide (Manakış)",
     category: "Taş Fırında Menü",
     price: "₺340,00",
     sizes: [
-      { label: "Orta", price: "—" },
-      { label: "Büyük", price: "₺340,00" },
+      { label: "Orta", price: "₺200,00" },
+      { label: "Büyük", price: "₺270,00" },
     ],
     image: "./images/buyuk-peynirli-pide-manakis.jpg",
     shortDescription: "Taş fırında pişen ince hamurun üzerinde eriyen peynirle sıcak ve sade bir lezzet.",
@@ -357,8 +357,8 @@ const menuData = [
     category: "Taş Fırında Menü",
     price: "₺378,89",
     sizes: [
-      { label: "Orta", price: "—" },
-      { label: "Büyük", price: "₺378,89" },
+      { label: "Orta", price: "₺200,00" },
+      { label: "Büyük", price: "₺270,00" },
     ],
     image: "./images/peynirli-muhammara-pide-manakis.jpg",
     shortDescription: "Muhammaranın baharatlı aroması, erimiş peynirle taş fırında birleşir.",
@@ -371,8 +371,8 @@ const menuData = [
     category: "Taş Fırında Menü",
     price: "—",
     sizes: [
-      { label: "Orta", price: "—" },
-      { label: "Büyük", price: "—" },
+      { label: "Orta", price: "₺200,00" },
+      { label: "Büyük", price: "₺270,00" },
     ],
     image: "./images/zahterli-peynirli-pide.jpg",
     shortDescription: "Aromatik zahter karışımı ve erimiş peynirle taş fırında pişen, sıcak ve doyurucu manakış.",
@@ -385,8 +385,8 @@ const menuData = [
     category: "Taş Fırında Menü",
     price: "—",
     sizes: [
-      { label: "Orta", price: "—" },
-      { label: "Büyük", price: "—" },
+      { label: "Orta", price: "₺200,00" },
+      { label: "Büyük", price: "₺270,00" },
     ],
     image: "./images/zahterli-pide.jpg",
     shortDescription: "Özel zahter karışımıyla hazırlanan ince hamurlu, kokusu güçlü klasik taş fırın manakışı.",
