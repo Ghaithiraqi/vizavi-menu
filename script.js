@@ -167,7 +167,7 @@ const menuData = [
   {
     name: "Falafel İçi Sumaklı Soğan",
     category: "Falafel Menü",
-    price: "₺50,00",
+    price: "₺35,00",
     image: "./images/falafel-ici-sumakli-sogan.jpg",
     shortDescription: "Çıtır falafel köftesi, sumaklı soğanın canlı ekşiliğiyle tek lokmalık bir lezzet sunar.",
     ingredients: ["1 adet çıtır falafel köftesi", "Sumaklı soğan"],
@@ -177,7 +177,7 @@ const menuData = [
   {
     name: "Falafel İçi Acı Peynir",
     category: "Falafel Menü",
-    price: "₺57,78",
+    price: "₺40,00",
     image: "./images/falafel-ici-aci-peynir.jpg",
     shortDescription: "Falafelin çıtır kabuğu, erimiş acı peynirle sıcak ve yoğun bir lezzete dönüşür.",
     ingredients: ["1 adet çıtır falafel köftesi", "Erimiş acı peynir"],
@@ -197,7 +197,7 @@ const menuData = [
   {
     name: "Tavuk Şavarma ile Doldurulmuş Falafel",
     category: "Falafel Menü",
-    price: "—",
+    price: "₺55,00",
     image: "./images/tavuk-savarma-falafel.jpg",
     shortDescription: "Çıtır falafelin içinde baharatlı tavuk şavarma; susamla kaplanmış, maydanozla servis edilen özel bir lezzet.",
     ingredients: ["Çıtır falafel", "Tavuk şavarma", "Susam", "Maydanoz"],
