@@ -53,10 +53,10 @@ const menuData = [
   {
     name: "Meze Tabağı",
     category: "Soğuk Mezeler Menü",
-    price: "—",
+    price: "₺500,00",
     image: "./images/meze-tabagi.jpg",
-    shortDescription: "Hummus, mütebbel, teboleh ve çıtır sarmalarla zenginleşen, paylaşmalık karışık soğuk meze tabağı.",
-    ingredients: ["Hummus", "Mütebbel", "Teboleh", "Çıtır sarma", "Falafel", "Nar taneleri"],
+    shortDescription: "Mütebbel, baba gannuş, humus, musahhan, sambusa, büyük falafel, fahita ve kızarmış içli köfteyle dolu, paylaşmalık zengin meze tabağı.",
+    ingredients: ["Mütebbel", "Baba Gannuş", "Humus", "Musahhan", "Sambusa", "Büyük Falafel", "Fahita", "Kızarmış İçli Köfte"],
     allergens: ["Gluten içerir", "Süt ürünleri içerir", "Susam içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: ["⭐ Popüler"],
   },
@@ -411,12 +411,52 @@ const menuData = [
   {
     name: "Peynir Maamoul",
     category: "Tatlı Menü",
-    price: "—",
+    price: "₺120,00",
     image: "./images/peynir-maamoul.jpg",
     shortDescription: "İçi peynirle doldurulmuş, pudra şekeri ve antep fıstığıyla servis edilen geleneksel maamul tatlısı.",
     ingredients: ["İrmik / un hamuru", "Peynir", "Pudra şekeri", "Antep fıstığı"],
     allergens: ["Gluten içerir", "Süt ürünleri içerir", "Kuruyemiş içerir", "Alerjen bilgisi için lütfen personele danışınız"],
     tags: [],
+  },
+  {
+    name: "Lübnan Geceleri",
+    category: "Tatlı Menü",
+    price: "₺210,00",
+    image: "./images/lubnan-geceleri.jpg",
+    shortDescription: "İrmik kreması üzerine özel şurup, antep fıstığı ve taze kremayla hazırlanan zarif bir Lübnan tatlısı.",
+    ingredients: ["İrmik", "Süt", "Özel krema", "Şurup", "Antep fıstığı"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Kuruyemiş içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
+  },
+  {
+    name: "Madluka",
+    category: "Tatlı Menü",
+    price: "₺200,00",
+    image: "./images/madluka.jpg",
+    shortDescription: "Kaymak ve özel kremayla katmanlanan, şuruplu ve antep fıstıklı geleneksel bir Şam tatlısı.",
+    ingredients: ["İrmik hamuru", "Kaymak", "Özel krema", "Şurup", "Antep fıstığı"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Kuruyemiş içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: [],
+  },
+  {
+    name: "Peynirli Katayef (3 Adet) ve Ceviz",
+    category: "Tatlı Menü",
+    price: "₺250,00",
+    image: "./images/peynirli-katayef.jpg",
+    shortDescription: "İçi peynir ve cevizle doldurulmuş, şuruplu üç adet katayef; sıcak ve doyurucu bir tatlı keyfi.",
+    ingredients: ["Katayef hamuru (3 adet)", "Peynir", "Ceviz", "Şurup"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Kuruyemiş içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: [],
+  },
+  {
+    name: "Nabulsi Künefe",
+    category: "Tatlı Menü",
+    price: "₺250,00",
+    image: "./images/nabulsi-kunefe.jpg",
+    shortDescription: "Tel kadayıf arasında eriyen peynir, şurup ve antep fıstığıyla servis edilen sıcak Nablus künefesi.",
+    ingredients: ["Tel kadayıf", "Künefelik peynir", "Şurup", "Antep fıstığı"],
+    allergens: ["Gluten içerir", "Süt ürünleri içerir", "Kuruyemiş içerir", "Alerjen bilgisi için lütfen personele danışınız"],
+    tags: ["⭐ Popüler"],
   },
   {
     name: "Türk Çayı",
@@ -857,65 +897,4 @@ function observeSections() {
     (entries) => {
       const visibleEntry = entries
         .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (visibleEntry) setActiveCategory(visibleEntry.target.dataset.category);
-    },
-    {
-      rootMargin: "-88px 0px -58% 0px",
-      threshold: [0.18, 0.32, 0.5],
-    },
-  );
-
-  document.querySelectorAll(".menu-category").forEach((section) => observer.observe(section));
-}
-
-function hideSplash() {
-  window.setTimeout(() => {
-    splashScreen.classList.add("is-hidden");
-  }, 900);
-}
-
-function cacheElements() {
-  categoryBar = document.querySelector("#categoryBar");
-  categoryShell = document.querySelector("#categoryShell");
-  menuSections = document.querySelector("#menuSections");
-  exploreMenu = document.querySelector("#exploreMenu");
-  splashScreen = document.querySelector("#splashScreen");
-  splashLogo = document.querySelector("#splashLogo");
-  brandLogo = document.querySelector("#brandLogo");
-  heroSlidesElement = document.querySelector("#heroSlides");
-  heroDots = document.querySelector("#heroDots");
-  modal = document.querySelector("#dishModal");
-  modalImageButton = document.querySelector("#modalImageButton");
-  modalImage = document.querySelector("#modalImage");
-  modalFallback = document.querySelector("#modalFallback");
-  modalTitle = document.querySelector("#modalTitle");
-  modalShortDescription = document.querySelector("#modalShortDescription");
-  modalIngredients = document.querySelector("#modalIngredients");
-  modalAllergens = document.querySelector("#modalAllergens");
-  modalPrice = document.querySelector("#modalPrice");
-  priceBlock = document.querySelector(".price-block");
-  closeButton = document.querySelector(".close-button");
-  imagePreview = document.querySelector("#imagePreview");
-  previewFrame = document.querySelector("#previewFrame");
-  previewImage = document.querySelector("#previewImage");
-  previewClose = document.querySelector(".preview-close");
-}
-
-function initializeMenu() {
-  cacheElements();
-  renderHeroSlider();
-  renderCategories();
-  renderMenu();
-  bindEvents();
-  observeSections();
-  restartHeroTimer();
-  hideSplash();
-}
-
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initializeMenu);
-} else {
-  initializeMenu();
-}
+        .sort((a, b) => b.intersectionRatio - a.intersectionRat
