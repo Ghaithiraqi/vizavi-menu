@@ -398,6 +398,10 @@ const menuData = [
     name: "Lahmacun",
     category: "Taş Fırında Menü",
     price: "—",
+    sizes: [
+      { label: "Orta", price: "₺250,00" },
+      { label: "Büyük", price: "₺320,00" },
+    ],
     image: "./images/lahmacun.jpg",
     shortDescription: "İncecik hamur üzerine baharatlı kıyma harcı; taş fırında pişen, maydanoz ve limonla servis edilen klasik lahmacun.",
     ingredients: ["İncecik hamur", "Kıyma", "Domates", "Biber", "Maydanoz", "Baharatlar"],
