@@ -23,7 +23,11 @@ const menuData = [
   {
     name: "Mütebbel",
     category: "Soğuk Mezeler Menü",
-    price: "₺250,00",
+    price: "—",
+    sizes: [
+      { label: "Küçük", price: "₺150,00" },
+      { label: "Orta", price: "₺250,00" },
+    ],
     image: "./images/mutebbel.jpg",
     shortDescription: "Köz patlıcanın isli aroması, tahin ve limonla kadifemsi bir mezeye dönüşür.",
     ingredients: ["Pita ekmeği", "Közlenmiş patlıcan", "Tahin", "Limon suyu"],
@@ -97,7 +101,7 @@ const menuData = [
   {
     name: "Normal Şavarma Sandviçi",
     category: "Ana Yemekler",
-    price: "₺65,00",
+    price: "₺290,00",
     image: "./images/normal-savarma-sandvici.jpg",
     shortDescription: "Baharatlı tavuk şavarma, taze malzemeler ve özel soslarla dürümde; çıtır patates ve turşuyla servis edilir.",
     ingredients: ["Tavuk şavarma", "Lavaş / dürüm ekmeği", "Çıtır patates", "Turşu", "Özel soslar"],
@@ -107,7 +111,7 @@ const menuData = [
   {
     name: "Filistinli Musakhan",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺65,00",
     image: "./images/filistinli-musakhan.jpg",
     shortDescription: "Sumaklı soğan ve baharatlı tavukla hazırlanan, ince ekmeğe sarılıp fırınlanan geleneksel Filistin lezzeti.",
     ingredients: ["Tavuk", "Sumaklı soğan", "İnce ekmek", "Zeytinyağı", "Baharatlar", "Yoğurt sos"],
@@ -137,7 +141,7 @@ const menuData = [
   {
     name: "Omlet",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺220,00",
     image: "./images/omlet.jpg",
     shortDescription: "Çırpılmış yumurta, domates ve biberle hazırlanan, naneyle servis edilen sıcacık omlet.",
     ingredients: ["Yumurta", "Domates", "Biber", "Soğan", "Baharatlar"],
