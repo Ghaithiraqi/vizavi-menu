@@ -142,7 +142,7 @@ const menuData = [
     name: "Omlet",
     category: "Ana Yemekler",
     price: "₺220,00",
-    image: "./images/omlet.jpg",
+    image: "./images/omlet-yeni.jpg",
     shortDescription: "Çırpılmış yumurta, domates ve biberle hazırlanan, naneyle servis edilen sıcacık omlet.",
     ingredients: ["Yumurta", "Domates", "Biber", "Soğan", "Baharatlar"],
     allergens: ["Yumurta içerir", "Alerjen bilgisi için lütfen personele danışınız"],
