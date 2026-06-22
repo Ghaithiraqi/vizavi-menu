@@ -897,4 +897,65 @@ function observeSections() {
     (entries) => {
       const visibleEntry = entries
         .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRat
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visibleEntry) setActiveCategory(visibleEntry.target.dataset.category);
+    },
+    {
+      rootMargin: "-88px 0px -58% 0px",
+      threshold: [0.18, 0.32, 0.5],
+    },
+  );
+
+  document.querySelectorAll(".menu-category").forEach((section) => observer.observe(section));
+}
+
+function hideSplash() {
+  window.setTimeout(() => {
+    splashScreen.classList.add("is-hidden");
+  }, 900);
+}
+
+function cacheElements() {
+  categoryBar = document.querySelector("#categoryBar");
+  categoryShell = document.querySelector("#categoryShell");
+  menuSections = document.querySelector("#menuSections");
+  exploreMenu = document.querySelector("#exploreMenu");
+  splashScreen = document.querySelector("#splashScreen");
+  splashLogo = document.querySelector("#splashLogo");
+  brandLogo = document.querySelector("#brandLogo");
+  heroSlidesElement = document.querySelector("#heroSlides");
+  heroDots = document.querySelector("#heroDots");
+  modal = document.querySelector("#dishModal");
+  modalImageButton = document.querySelector("#modalImageButton");
+  modalImage = document.querySelector("#modalImage");
+  modalFallback = document.querySelector("#modalFallback");
+  modalTitle = document.querySelector("#modalTitle");
+  modalShortDescription = document.querySelector("#modalShortDescription");
+  modalIngredients = document.querySelector("#modalIngredients");
+  modalAllergens = document.querySelector("#modalAllergens");
+  modalPrice = document.querySelector("#modalPrice");
+  priceBlock = document.querySelector(".price-block");
+  closeButton = document.querySelector(".close-button");
+  imagePreview = document.querySelector("#imagePreview");
+  previewFrame = document.querySelector("#previewFrame");
+  previewImage = document.querySelector("#previewImage");
+  previewClose = document.querySelector(".preview-close");
+}
+
+function initializeMenu() {
+  cacheElements();
+  renderHeroSlider();
+  renderCategories();
+  renderMenu();
+  bindEvents();
+  observeSections();
+  restartHeroTimer();
+  hideSplash();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeMenu);
+} else {
+  initializeMenu();
+}
