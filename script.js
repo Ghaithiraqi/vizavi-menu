@@ -109,7 +109,7 @@ const menuData = [
     tags: ["⭐ Popüler"],
   },
   {
-    name: "Peynirli Arap Usulü Şavarma (Kaşarlı)",
+    name: "Peynirli Usulü Şavarma (Kaşarlı)",
     category: "Ana Yemekler",
     price: "₺310,00",
     image: "./images/peynirli-arap-savarma.jpg",
@@ -149,7 +149,7 @@ const menuData = [
     tags: ["🔥 Sıcak"],
   },
   {
-    name: "Double Arap Şavarması",
+    name: "Double Şavarması",
     category: "Ana Yemekler",
     price: "₺350,00",
     image: "./images/double-arap-savarmasi.jpg",
