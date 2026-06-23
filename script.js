@@ -423,7 +423,7 @@ const menuData = [
     tags: [],
   },
   {
-    name: "Kudsiye",
+    name: "Kudsiye (Bakla Ezmesi)",
     category: "Hummus Menü",
     price: "₺260,00",
     image: "./images/kudsiye.jpg",
