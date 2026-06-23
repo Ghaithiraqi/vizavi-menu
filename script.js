@@ -13,7 +13,7 @@ const menuData = [
   {
     name: "Teboleh",
     category: "Soğuk Mezeler Menü",
-    price: "₺280,00",
+    price: "₺250,00",
     image: "./images/teboleh.jpg",
     shortDescription: "Maydanozun tazeliği, limonun parlak aroması ve ince bulgurla hafif bir mezze klasiği.",
     ingredients: ["İnce bulgur", "Taze maydanoz", "Domates", "Limon suyu"],
@@ -25,8 +25,8 @@ const menuData = [
     category: "Soğuk Mezeler Menü",
     price: "—",
     sizes: [
-      { label: "Küçük", price: "₺150,00" },
-      { label: "Orta", price: "₺250,00" },
+      { label: "Orta", price: "₺150,00" },
+      { label: "Büyük", price: "₺250,00" },
     ],
     image: "./images/mutebbel.jpg",
     shortDescription: "Köz patlıcanın isli aroması, tahin ve limonla kadifemsi bir mezeye dönüşür.",
@@ -181,7 +181,7 @@ const menuData = [
   {
     name: "Kıymalı Yumurta",
     category: "Ana Yemekler",
-    price: "—",
+    price: "₺300,00",
     image: "./images/etli-yumurta.jpg",
     shortDescription: "Baharatlı kıyma, biber ve domatesle pişirilen, yumurtayla taçlandırılan sıcak tava yemeği.",
     ingredients: ["Kıyma", "Yumurta", "Domates", "Biber", "Baharatlar"],
